@@ -1,0 +1,16 @@
+For loop syntex :
+ for( initialization ; condition ; updation ) 
+ 
+ Flow:
+ for loop checks the initialization only once then goes to condition and then updation;
+ condition and updation are executed in loop ( again and again ) until condition becomes false of any ' break ' condition is met
+
+Multiple variables initialization, multiple conditions and multiple updation
+	syntax : for ( int a = 0, b = 1 ; a >= 0 && b <= 1; a--,b--)    //this is possible
+
+for loop without any paramater goes to infinite loop, if break statetement is declared within the loop
+	i.e for ( ; ; ) //this goes to infinite loop if no break statement is declared inside the loop
+
+
+Break 
+	break statement gets you out of the loop if certain condition is fulfilled
