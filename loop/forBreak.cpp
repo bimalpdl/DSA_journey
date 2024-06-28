@@ -8,7 +8,7 @@ int main () {
 	for ( int i = 2; i < number ; i++ ) {
 		if ( number % i == 0 ) {
 			isPrime = 0;
-			break;
+			break; // if ' number % i == 0 ' then the loop will break and control goes after the loop body
 		}
 	}
 	if ( isPrime == false ) {
