@@ -2,9 +2,7 @@
 using namespace std;
 int main () {
 	cout << "Hello There";
-
-slkskj
-slknk
-	kjlkj
+	cout << "Oh Hi there";
 	return 0;
+
 }
