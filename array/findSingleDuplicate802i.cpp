@@ -3,21 +3,21 @@
 #include <iostream>
 using namespace std;
 int findDuplicate(int arr[], int size) {
-int answer = 0;
-for (int i = 0; i < size; i++ ){
-answer = answer ^ arr[i];
-}
-for (int i = 0; i < size - 1 ; i++ ){
-	answer = answer * i;
-}
-return answer;
+	int answer = 0;
+	for (int i = 0; i < size; i++ ){
+		answer = answer ^ arr[i];
+	}
+	for (int i = 1; i < size; i++ ){
+		answer = answer ^ i;
+	}
+	return answer;
 }
 int main() {
-int arr[10];
-cout << "Enter 10 element such that 1 element repeats atleast once: " << endl;
-for(int i = 0; i < 10; i++)
-	cin >> arr[i];
-int result = findDuplicate(arr, 10);
-cout << "The duplicate element in the array is : " << result << endl;
-return 0;
+	int arr[10];
+	cout << "Enter 10 element such that 1 element repeats atleast once: " << endl;
+	for(int i = 0; i < 10; i++)
+		cin >> arr[i];
+	int result = findDuplicate(arr, 10);
+	cout << "The duplicate element in the array is : " << result << endl;
+	return 0;
 }
