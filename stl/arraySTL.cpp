@@ -6,8 +6,8 @@ int main() {
 	//normal array
 	int arr1[3] = {100, -293, 638};
 
-	// Array STL declaration 
-	array<int,4> arr = {25, -43, 100, 250}; 
+	// Array STL declaration
+	array<int,4> arr = {25, -43, 100, 250};
 	// 'array' keyword is used; <dataType, size> followed by name of the array ('arr' in this case)
 	// implementation of array STL is similar to normal array but with additional built-in functions
 	// it is fixed sized as normal array
@@ -25,12 +25,12 @@ int main() {
 
 	cout << "Element at third index is : " << arr.at(3) << endl;    // at() function can be used to access the given index
 
-	cout << "Is empty? " << arr.empty() << endl;    // empty() function is used to check if the given array is empty; 
+	cout << "Is empty? " << arr.empty() << endl;    // empty() function is used to check if the given array is empty;
 							// it returns boolean value
 
 	cout << "First element of the array is: " << arr.front() << endl;  // first() returns the first element of given array
 	cout << "Last element of the array is: " << arr.back() << endl;  // back() returns the last element of given array
-  
+
 	// All these operations are performed on O(1) time complexity.
 return 0;
 }
